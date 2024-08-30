@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="artistCell" id="gTV-IL-0wX" customClass="searchCollectionViewCell" customModule="playApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="121"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="121"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="liza" translatesAutoresizingMaskIntoConstraints="NO" id="iKs-lF-go7">
+                        <rect key="frame" x="11" y="2" width="75" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="75" id="sTT-iv-CH5"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSE-L4-3NZ">
+                        <rect key="frame" x="15" y="79" width="71" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="xwO-wx-L9A"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ot-FO-ZXT">
+                        <rect key="frame" x="15" y="98" width="71" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="XtH-BX-JGY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="0ot-FO-ZXT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="498-D9-Cgq"/>
+                <constraint firstAttribute="trailing" secondItem="cSE-L4-3NZ" secondAttribute="trailing" constant="14" id="JId-9h-ilz"/>
+                <constraint firstAttribute="trailing" secondItem="iKs-lF-go7" secondAttribute="trailing" constant="14" id="R0m-fo-io7"/>
+                <constraint firstItem="iKs-lF-go7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="Vs1-LK-KqU"/>
+                <constraint firstItem="0ot-FO-ZXT" firstAttribute="top" secondItem="cSE-L4-3NZ" secondAttribute="bottom" constant="3" id="dEU-zy-v0a"/>
+                <constraint firstItem="cSE-L4-3NZ" firstAttribute="top" secondItem="iKs-lF-go7" secondAttribute="bottom" constant="2" id="da2-lr-aYN"/>
+                <constraint firstItem="iKs-lF-go7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="11" id="iuh-Ow-TJF"/>
+                <constraint firstAttribute="trailing" secondItem="0ot-FO-ZXT" secondAttribute="trailing" constant="14" id="jEV-cE-5tI"/>
+                <constraint firstItem="cSE-L4-3NZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="peA-hX-JJU"/>
+            </constraints>
+            <size key="customSize" width="100" height="121"/>
+            <connections>
+                <outlet property="imgArtist" destination="iKs-lF-go7" id="Kt7-Io-64z"/>
+                <outlet property="lblArtistGenre" destination="0ot-FO-ZXT" id="fPM-Gm-ArF"/>
+                <outlet property="lblartistName" destination="cSE-L4-3NZ" id="6Yo-Ll-cYv"/>
+            </connections>
+            <point key="canvasLocation" x="119.08396946564885" y="13.732394366197184"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="liza" width="58" height="58"/>
+    </resources>
+</document>

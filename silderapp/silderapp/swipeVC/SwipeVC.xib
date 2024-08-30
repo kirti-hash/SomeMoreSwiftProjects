@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SwipeVC" customModule="silderapp" customModuleProvider="target">
+            <connections>
+                <outlet property="myColl" destination="Kq8-Wt-Mbd" id="8eb-fj-S2j"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Kq8-Wt-Mbd">
+                    <rect key="frame" x="5" y="93" width="383" height="651"/>
+                    <color key="backgroundColor" red="0.74449377179999998" green="0.89013809970000002" blue="0.77641550169999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="QvR-xV-Zxj">
+                        <size key="itemSize" width="383" height="725"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="IOa-H1-KRy"/>
+                        <outlet property="delegate" destination="-1" id="hhS-jV-tlA"/>
+                    </connections>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpN-Kw-kEy">
+                    <rect key="frame" x="336" y="395" width="52" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="Jms-Jx-3FU"/>
+                        <constraint firstAttribute="width" constant="52" id="vjM-fO-bn2"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="chevron.forward.circle" catalog="system">
+                        <backgroundConfiguration key="background">
+                            <color key="backgroundColor" red="0.74449377179999998" green="0.89013809970000002" blue="0.77641550169999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </backgroundConfiguration>
+                        <color key="baseForegroundColor" red="0.89013809970000002" green="0.52190146879999999" blue="0.88897433449999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="BtnNextImg:" destination="-1" eventType="touchUpInside" id="3kh-i9-OD9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qun-ay-7os">
+                    <rect key="frame" x="5" y="401" width="45" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="kgS-HG-JB8"/>
+                        <constraint firstAttribute="height" constant="52" id="x9M-rL-BOO"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="chevron.backward.circle" catalog="system">
+                        <backgroundConfiguration key="background">
+                            <color key="backgroundColor" red="0.74449377179999998" green="0.89013809970000002" blue="0.77641550169999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </backgroundConfiguration>
+                        <color key="baseForegroundColor" red="0.89013809970000002" green="0.52190146879999999" blue="0.88897433449999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="previousBtn:" destination="-1" eventType="touchUpInside" id="s5c-IA-f10"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.74449377183780829" green="0.89013809974747471" blue="0.77641550171538154" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qun-ay-7os" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="342" id="1H1-1I-db2"/>
+                <constraint firstItem="Kq8-Wt-Mbd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="34" id="677-rX-rtn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Kq8-Wt-Mbd" secondAttribute="trailing" constant="5" id="C22-t0-COx"/>
+                <constraint firstItem="Kq8-Wt-Mbd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="Ja0-HR-d5Y"/>
+                <constraint firstItem="Kq8-Wt-Mbd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="34" id="Jl7-n9-taa"/>
+                <constraint firstItem="qun-ay-7os" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="aVj-30-oN6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Kq8-Wt-Mbd" secondAttribute="bottom" constant="74" id="eBU-8h-McJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Kq8-Wt-Mbd" secondAttribute="bottom" constant="74" id="f1Q-ZA-ecC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YpN-Kw-kEy" secondAttribute="trailing" constant="5" id="fZa-0p-d4d"/>
+                <constraint firstItem="Kq8-Wt-Mbd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="iqy-PC-bhD"/>
+                <constraint firstItem="Kq8-Wt-Mbd" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-5" id="tcx-fU-KyV"/>
+                <constraint firstItem="YpN-Kw-kEy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="336" id="yHi-On-kjJ"/>
+            </constraints>
+            <point key="canvasLocation" x="77.099236641221367" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.backward.circle" catalog="system" width="128" height="123"/>
+        <image name="chevron.forward.circle" catalog="system" width="128" height="123"/>
+    </resources>
+</document>

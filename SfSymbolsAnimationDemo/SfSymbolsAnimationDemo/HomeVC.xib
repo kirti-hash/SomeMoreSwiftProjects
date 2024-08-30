@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="SfSymbolsAnimationDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="imgCal" destination="POP-ep-NZD" id="XSK-QC-2QF"/>
+                <outlet property="imgHeart" destination="0bl-Zl-KbV" id="r03-dL-JWd"/>
+                <outlet property="imgHome" destination="7Zc-iu-5ST" id="Iuw-Dn-7hr"/>
+                <outlet property="imgMessage" destination="n1b-qj-oUo" id="opo-sP-xZX"/>
+                <outlet property="imgPencil" destination="5Qb-59-lzI" id="9ug-nY-Zan"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message.badge.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="n1b-qj-oUo">
+                    <rect key="frame" x="115" y="73.333333333333329" width="124" height="104.00000000000001"/>
+                    <color key="tintColor" red="0.1170030162" green="0.174564153" blue="0.737151838447619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="103.66666666666667" id="H7N-uU-mn9"/>
+                        <constraint firstAttribute="width" constant="124" id="Vt6-6L-Smq"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7Zc-iu-5ST">
+                    <rect key="frame" x="109" y="203.66666666666666" width="137" height="103.99999999999997"/>
+                    <color key="tintColor" red="0.62021371048419371" green="0.11525485194077632" blue="0.30019601590636269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="137" id="1FW-Ki-goP"/>
+                        <constraint firstAttribute="height" constant="104.66666666666666" id="w5N-bE-Ukq"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speaker.wave.3.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5Qb-59-lzI">
+                    <rect key="frame" x="115" y="348" width="131" height="89"/>
+                    <color key="tintColor" red="0.0" green="0.46000000000000002" blue="0.40822916669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="131" id="KeD-UX-WZB"/>
+                        <constraint firstAttribute="height" constant="91" id="Lu5-dO-d1W"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0bl-Zl-KbV">
+                    <rect key="frame" x="115" y="474" width="131" height="88"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="91" id="kkx-jC-srP"/>
+                        <constraint firstAttribute="width" constant="131" id="mCV-OT-dAZ"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="POP-ep-NZD">
+                    <rect key="frame" x="131" y="596" width="131" height="88"/>
+                    <color key="tintColor" systemColor="systemGreenColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="131" id="Ew9-et-gC3"/>
+                        <constraint firstAttribute="height" constant="91" id="ViP-eP-2Za"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTM-4K-5jJ">
+                    <rect key="frame" x="115" y="772" width="179" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="FA1-p5-ZbI"/>
+                        <constraint firstAttribute="width" constant="179" id="k4m-Da-Tvt"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Next">
+                        <backgroundConfiguration key="background" cornerRadius="76">
+                            <color key="backgroundColor" red="0.93951955779999996" green="0.89159757650000004" blue="0.60791347790000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </backgroundConfiguration>
+                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="BtnNextTap:" destination="-1" eventType="touchUpInside" id="S6t-Wb-aq0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.56180440926370556" green="0.80483974839935979" blue="0.89207558023209288" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5Qb-59-lzI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-16" id="0Gc-AT-uja"/>
+                <constraint firstItem="POP-ep-NZD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EUL-z7-JRo"/>
+                <constraint firstItem="7Zc-iu-5ST" firstAttribute="top" secondItem="n1b-qj-oUo" secondAttribute="bottom" constant="26.333333333333371" id="Nry-PS-Hlb"/>
+                <constraint firstItem="n1b-qj-oUo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-19.5" id="PLc-X2-ZBA"/>
+                <constraint firstItem="qTM-4K-5jJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="115" id="PQ7-ig-w8e"/>
+                <constraint firstItem="0bl-Zl-KbV" firstAttribute="top" secondItem="5Qb-59-lzI" secondAttribute="bottom" constant="34" id="RTK-s3-7XQ"/>
+                <constraint firstItem="n1b-qj-oUo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="14.999999999999986" id="XBa-Fo-PiL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qTM-4K-5jJ" secondAttribute="trailing" constant="99" id="a0T-qf-46Z"/>
+                <constraint firstItem="0bl-Zl-KbV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-16" id="aWv-Af-kTI"/>
+                <constraint firstItem="qTM-4K-5jJ" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="bC9-4R-gbI"/>
+                <constraint firstItem="7Zc-iu-5ST" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-19" id="jdA-PZ-2F1"/>
+                <constraint firstItem="5Qb-59-lzI" firstAttribute="top" secondItem="7Zc-iu-5ST" secondAttribute="bottom" constant="38.333333333333314" id="onC-tM-N8h"/>
+                <constraint firstItem="POP-ep-NZD" firstAttribute="top" secondItem="0bl-Zl-KbV" secondAttribute="bottom" constant="31.329999999999998" id="vSH-h6-JjM"/>
+            </constraints>
+            <point key="canvasLocation" x="46.564885496183201" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="calendar" catalog="system" width="128" height="107"/>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="message.badge.fill" catalog="system" width="128" height="122"/>
+        <image name="speaker.wave.3.fill" catalog="system" width="128" height="84"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

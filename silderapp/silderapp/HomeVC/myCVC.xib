@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="myCVC" customModule="silderapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="400"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="400"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="Joa-yo-djc">
+                        <rect key="frame" x="1" y="1" width="391" height="398"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Joa-yo-djc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="1" id="39o-xa-n6U"/>
+                <constraint firstItem="Joa-yo-djc" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="IXj-nG-7XX"/>
+                <constraint firstItem="Joa-yo-djc" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Xq4-FH-83V"/>
+                <constraint firstAttribute="bottom" secondItem="Joa-yo-djc" secondAttribute="bottom" constant="1" id="Z0x-Bl-QdX"/>
+                <constraint firstItem="Joa-yo-djc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="ZfV-pT-1MM"/>
+                <constraint firstAttribute="trailing" secondItem="Joa-yo-djc" secondAttribute="trailing" constant="1" id="gKj-xh-ILb"/>
+            </constraints>
+            <connections>
+                <outlet property="myImg" destination="Joa-yo-djc" id="t3E-0R-59h"/>
+            </connections>
+            <point key="canvasLocation" x="17" y="-11"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="1" width="4000" height="6000"/>
+    </resources>
+</document>
